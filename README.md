@@ -1,12 +1,18 @@
 # Configurações
 
+
+## Totvs Restore
+* Utilizar o restore disponibilizado pela totvs;
+    link para documentação:  https://tdn.totvs.com/pages/releaseview.action?pageId=607585039
+    Obrigatorio que a pasta do restore esteja dentro da mesma pasta do atualizador com o nome "restore"
+
 ## Ambientes
-* Após montar os ambientes, selecionar seus respectivos ID´s e realizar a configuração no arquivo *versoes.ini*
+* Após montar os ambientes no site do restore (https://totvsrestore.z15.web.core.windows.net/#/), selecionar seus respectivos ID´s e realizar a configuração no arquivo *versoes.ini*
 Exemplo de configuração
     
 ```sh
         [atual]
-        id=3962
+        id=ID
         sqlhost=SERVIDORSQL
         sqlbanco=BANCOSQL
         oraclehost=SERVIDORORAACLE
@@ -43,23 +49,12 @@ Editar as configurações do arquivo credenciais.py com as suas credenciais cria
     . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
     Escolha uma das opcoes acima [1,2]?
     ```
-* Deve-se escolher Atualizar o ambiente ou apenas unicar o sistema na versão escolhida;
+* Por ultimo deve-se escolher Atualizar o ambiente ou apenas unicar o sistema na versão escolhida;
     ```sh
     .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++
     . + Escoha a versao do RM a ser aberta
     . + 1 Atualizar Ambiente
     . + 2 Apenas subir o Host
-    . +
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Escolha uma das opcoes acima [1,2]?
-    ```
-    
-* Caso deseja atualizar, será questionado se deseja apagar o ambiente anterior
-    ```sh
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    . + Deseja apagar os arquivos antes de prosseguir atualizando
-    . + 1 Não
-    . + 2 Sim
     . +
     . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
     Escolha uma das opcoes acima [1,2]?
