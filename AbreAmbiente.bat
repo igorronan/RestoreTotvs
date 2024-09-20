@@ -22,6 +22,7 @@ set /A cont=1
 set folder_origin=%~dp0
 set versao=atual
 set file=%folder_origin%\versoes.ini
+cmd /c "%folder_origin%\controleversao.exe --folder %folder_origin%
 
 echo . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo . + Escoha a versao do RM a ser aberta
