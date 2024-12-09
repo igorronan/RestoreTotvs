@@ -34,50 +34,14 @@ Definir qual portal será aberto por padrao ao terminar de carregar o ambiente (
         default=portalpaciente
 ```
 
+Caso deseje visualizar os logs de informações na propria tela do CLI, basta adicionar o trecho abaixo no arquivo de versoes.ini 
+```sh
+    versoes.ini
+        [log]
+        info=true
+```
 
 ## Utilização
+* Para tornar mais intuitivo a atulização trouxe a versão grafica para escolha dos ambientes;
 * Para utilizar o CLI basta inica-lo (sempre como administrador);
-* No primeiro passo deve-se digitar a versao cadastrada no arquivo *versoes.ini*
-    ```sh
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    . + Escoha a versao do RM a ser aberta
-    . + Ex 2209
-    . + para versao atual apenas aperte Enter
-    . +
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Versao:
-    ```
-    
-* Apos deve-se escolher qual banco de dados utilizar
-    ```sh
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    . + Escoha a versao do RM a ser aberta
-    . + 1 SQL
-    . + 2 ORACLE
-    . +
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Escolha uma das opcoes acima [1,2]?
-    ```
-
-* Depois deve-se escolher Atualizar o ambiente ou apenas iniciar o sistema na versão escolhida;
-    ```sh
-    .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    . + Escoha a versao do RM a ser aberta
-    . + 1 Atualizar Ambiente
-    . + 2 Apenas subir o Host
-    . +
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Escolha uma das opcoes acima [1,2]?
-    ```
-
-
-* Por ultimo caso desejar pode-se excluir todo o ambiente antes de subir novamente os novos arquivos;
-    ```sh
-    .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    . + Deseja apagar os arquivos antes de prosseguir atualizando
-    . + 1 Não
-    . + 2 Sim
-    . +
-    . ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    Escolha uma das opcoes acima [1,2]?
-    ```
+* Para a virada de versão, deve-se obrigatoriamente realizar o cadastro da nova versão no Restore da Totvs (passo Ambientes)
